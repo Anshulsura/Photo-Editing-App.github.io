@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container disabled">
+      <h1>Photo Editor</h1>
+      <div class="viewImg">
+        <img src="" alt="" id="image" />
+      </div>
+      <div class="upload">
+        <input type="file" id="upload" accept="image/*" hidden />
+        <button>Upload Image</button>
+      </div>
+      <div class="slider">
+        <div class="sliderData"><span id="filterName">brightness</span> <span id="rangeVal">0</span></div>
+        <input type="range" min="0" max="100" value="0">
+      </div>
+      <div class="filterSection">
+        <p>Filters</p>
+        <div class="filterButton">
+          <button id="brightness" title="bright" class="active">
+            <img width="20px" height="20px" src="./assets/brightness.png" alt="">
+          </button>
+          <button id="blur" title="blur">
+            <img width="20px" height="20px" src="./assets/blur.png" alt="">
+          </button>
+          <button id="invert" title="invert">
+            <img width="20px" height="20px" src="/assets/invert.png" alt="">
+          </button>
+          <button id="saturate" title="saturate">
+            <img width="20px" height="20px" src="./assets/saturation.webp" alt="">
+          </button>
+          <button id="contrast" title="contrast">
+            <img width="20px" height="20px" src="./assets/contrast.png" alt="">
+          </button>
+        </div>
+        
+      </div>
+      
+      <button id="reset">Reset</button>
+   
+    <script src="./js/script.js"></script>
+  </body>
+</html>
